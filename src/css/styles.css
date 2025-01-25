@@ -1,0 +1,146 @@
+/*main styling for pages*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+/*styling header*/
+header {
+    padding: 20px;
+    background-color: rgb(192, 188, 188);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*styling for menu and links in mobile device*/
+nav{
+    height: 100vh;
+    width: 300px;
+    top: 0;
+    right: 0;
+    display: none;
+    position: fixed;
+    background-color: rgb(192, 188, 188);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 30px;
+    line-height: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-menu {
+    display: inline-block;
+}
+
+h1{
+    margin-left: 30px;
+    font-size: 1.4em;
+}
+
+/*styling for open button, hamburger menu*/
+.menu-open {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px 10px;
+    background-color: rgb(192, 188, 188);
+    cursor: pointer;
+}
+
+.bars{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 10px;
+}
+
+/*styling for close button, hamburger menu*/
+.menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    background-color: rgb(192, 188, 188);
+    cursor: pointer;
+    border: none;
+}
+
+.cross1 {
+    width: 30px;
+    transform: rotate(45deg);
+    top: 5px;
+    position: relative;
+}
+
+.cross2 {
+    width: 30px;
+    transform: rotate(135deg);
+    top: -3px;
+    position: relative;
+}
+
+/*styling for desktop*/
+@media (min-width: 992px) {
+    /*styling for menu and links in desktop view*/
+    .menu-open {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    nav {
+        font-size: 1.3em;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    nav li {
+        display: inline;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-left: 80px;
+    }
+
+}

@@ -9,7 +9,23 @@
 </head>
 <body>
     <header>
+        <h1>Moment 1</h1>
+        <!--open button hamburger menu-->
+        <button class="menu-open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
         <nav>
+            <!--closebutton for hamburger menu-->
+            <button class="menu-close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+            </button>
             <ul>
                 <li><a href="index.html">Start</a></li>
                 <li><a href="images.html">Bilder</a></li>
@@ -18,7 +34,8 @@
         </nav>
     </header>
 
-    <main>
+    <!--container for five pictures-->
+    <main class="images-container">
         <picture>
             <source srcset="images/pic1.jpg?as=webp&width=400" type="image/webp">
             <img src="images/pic1.jpg?width=400" alt="Blå rund ljuslykta">

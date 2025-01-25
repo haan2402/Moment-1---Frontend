@@ -9,7 +9,23 @@
 </head>
 <body>
     <header>
-        <nav>
+        <h1>Moment 1</h1>
+        <!--open button hamburger menu-->
+        <button class="menu-open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
+        <nav id="nav-menu">
+            <!--closebutton for hamburger menu-->
+            <button class="menu-close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+            </button>
             <ul>
                 <li><a href="index.html">Start</a></li>
                 <li><a href="images.html">Bilder</a></li>
@@ -18,12 +34,15 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Moment 1 - DT211G Frontend</h1>
+    <!--main info for startpage-->
+    <main class="main-container">
+        <section>
+        <h2>DT211G Frontend</h2>
         <p>Denna uppgift går ut på att utveckla en responsiv webbplats med verktyg för att 
             automatisera arbetet. Jag kommer att använda mig av Node.js för att förenkla utvecklingen av arbetet.
             Git och github kommer användas för att kunna göra en automatisk publicering och parcel kommer 
             användas. En enkel webbplats med HTML, CSS och javascript kommer skapas för denna uppgift.</p>
+        </section>
     </main>
     <footer>
         <p>Av: Hanna Angeria, haan2402@student.miun.se</p>
