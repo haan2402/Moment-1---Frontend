@@ -8,6 +8,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2em;
+    background-color: rgb(231, 229, 229);
 }
 
 /*styling header*/
@@ -103,6 +104,25 @@ h1{
     position: relative;
 }
 
+.main-container,
+.images-container,
+.about-container {
+    width: 90%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+footer {
+    background-color: rgb(192, 188, 188);
+    text-align: center;
+    height: 80px;
+    padding: 20px;
+}
+
 /*styling for desktop*/
 @media (min-width: 992px) {
     /*styling for menu and links in desktop view*/
@@ -119,13 +139,13 @@ h1{
     }
 
     nav {
-        font-size: 1.3em;
+        font-size: 1.2em;
         display: flex;
-        position: fixed;
+        position: relative;
         top: 0;
         right: 0;
         width: auto;
-        height: auto;
+        height: 80px;
     }
 
     nav ul {
@@ -139,8 +159,8 @@ h1{
     }
 
     h1 {
-        font-size: 1.5em;
-        margin-left: 80px;
+        font-size: 1.8em;
+        margin-left: 90px;
     }
 
 }
