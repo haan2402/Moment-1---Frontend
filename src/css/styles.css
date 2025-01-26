@@ -7,8 +7,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2em;
+    line-height: 1.7em;
     background-color: rgb(231, 229, 229);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*styling header*/
@@ -36,7 +39,7 @@ nav ul {
     list-style: none;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 30px;
     line-height: 2em;
 }
@@ -104,18 +107,54 @@ h1{
     position: relative;
 }
 
+/*styling for main and abput container, filling out the space on the page, sizing text*/
 .main-container,
-.images-container,
 .about-container {
     width: 90%;
+    flex: 1;
+    display: flex;
     background-color: white;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
 }
 
+.main-container h2,
+.about-container h2 {
+    font-size: 1.3em;
+    padding: 10px;
+}
 
+.main-container p,
+.about-container p {
+    font-size: 1em;
+    padding: 10px;
+}
+
+/*styling for images, in mobile view all pictures in a column, adding box-shadow and centering.*/
+.images-container {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.images-container div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.images-container img {
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*styling footer*/
 footer {
     background-color: rgb(192, 188, 188);
     text-align: center;
@@ -125,7 +164,7 @@ footer {
 
 /*styling for desktop*/
 @media (min-width: 992px) {
-    /*styling for menu and links in desktop view*/
+    /*styling for menu and links in desktop view, all links on a row*/
     .menu-open {
         display: none;
     }
@@ -161,6 +200,41 @@ footer {
     h1 {
         font-size: 1.8em;
         margin-left: 90px;
+    }
+
+    /*centering and sizing conatiner on desktop*/
+    .main-container,
+    .about-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .main-container section {
+        max-width: 40em;
+    }
+
+    /*now pictures two and two on a row*/
+    .images-container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .images-container div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-left: 70px;
+        padding: 20px;
+    }
+
+    .images-container img {
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
     }
 
 }
