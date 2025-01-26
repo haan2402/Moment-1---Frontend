@@ -108,8 +108,7 @@ h1{
 }
 
 /*styling for main and abput container, filling out the space on the page, sizing text*/
-.main-container,
-.about-container {
+.main-container {
     width: 90%;
     flex: 1;
     display: flex;
@@ -120,7 +119,8 @@ h1{
 }
 
 .main-container h2,
-.about-container h2 {
+.about-container h2,
+.about-container h3 {
     font-size: 1.3em;
     padding: 10px;
 }
@@ -152,6 +152,21 @@ h1{
 
 .images-container img {
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*styling for text sections*/
+.about-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.about-container ul {
+    padding: 10px;
 }
 
 /*styling footer*/
@@ -235,6 +250,11 @@ footer {
 
     .images-container img {
         box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /*max width for text on desktop*/
+    .about-container {
+        max-width: 40em;
     }
 
 }
